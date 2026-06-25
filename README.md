@@ -1,8 +1,1 @@
-1.1. Đề bài
-  Xây dựng hệ thống quản lý kho hàng đơn giản với các tác vụ nhập kho, xuất kho, kiểm kê. Chương trình cần quản lý danh mục sản phẩm (mã, tên, loại hàng, đơn vị tính, số lượng tồn, đơn giá, ngưỡng tồn tối thiểu); ghi nhận các giao dịch nhập/xuất kèm số lượng, đơn giá và ngày thực hiện; tự động cập nhật tồn kho sau mỗi giao dịch và cảnh báo khi hàng xuống dưới ngưỡng tối thiểu. Ngoài ra chương trình hỗ trợ tìm kiếm sản phẩm, liệt kê hàng sắp hết và một số báo cáo: nhật ký nhập/xuất theo tháng và thống kê giá trị hàng tồn kho hiện tại.
-  Yêu cầu chung của học phần: chương trình điều khiển bằng menu; dữ liệu lưu trong tệp văn bản; và quan trọng nhất là không sử dụng các cấu trúc dữ liệu/thư viện thuật toán dựng sẵn (như vector, list, hàm sort, search…) mà phải tự cài đặt.
-1.2. Phân tích yêu cầu
-  Từ đề bài, nhóm em xác định hai loại dữ liệu cốt lõi cần lưu trữ:
-    • Sản phẩm (SanPham): một mặt hàng trong kho, gồm thuộc tính cố định (mã, tên, loại, đơn vị) và thuộc tính thay đổi theo thời gian (số lượng tồn).
-    • Giao dịch (GiaoDich): mỗi lần nhập hoặc xuất là một bản ghi riêng để có thể truy vết lịch sử và lập báo cáo theo kỳ. Đây là quan hệ một–nhiều: một sản phẩm có nhiều giao dịch.
-Điểm cần lưu ý về nghiệp vụ là tồn kho không được nhập trực tiếp tùy ý mà phải là hệ quả của các giao dịch: nhập thì cộng, xuất thì trừ, và không cho phép xuất quá số lượng đang có. Vì vậy nhóm em tách riêng chức năng “sửa sản phẩm” (chỉ sửa thông tin mô tả) với hai chức năng nhập/xuất (mới được thay đổi tồn). Toàn bộ chức năng được gom thành 10 mục trên một menu chính, lặp lại cho tới khi người dùng chọn thoát và lưu dữ liệu.
+
